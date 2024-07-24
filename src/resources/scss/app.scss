@@ -1,9 +1,11 @@
-@import "_variable.scss";   
-
-h1 {
-    color: $red-color;
+@import '_variable.scss';
+.class {
+    color: red;
 }
 
-h2 {
-    color: rgb(62, 240, 49);
+.card {
+    img {
+        border: 1px solid #ccc;
+        object-fit: cover;
+    }
 }

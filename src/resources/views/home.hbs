@@ -1,1 +1,24 @@
-<h1>HOME da</h1>
+<div class="mt-4">
+    <div class="row">
+
+        {{#each courses}}
+        <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+            <div class="card">
+                <a href="/courses/{{this.slug}}">
+                    <img src="{{this.thumbnail}}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <a class="text-decoration-none" href="/courses/{{this.slug}}">
+                        <h5 class="card-title">{{this.name}}</h5>
+                    </a>
+                    <p class="card-text">{{this.description}}</p>
+
+                    <p>{{this.price}}$</p>
+                    <a href="/courses/{{this.slug}}" class="btn btn-primary">Học ngay!</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+    </div>
+</div>
